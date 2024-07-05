@@ -1,4 +1,5 @@
-// TODO: background script
-chrome.runtime.onInstalled.addListener(() => {
-  // TODO: on installed function
-})
+chrome.webRequest.onBeforeRedirect.addListener((details) => {
+
+}, {
+    urls: ['<all_urls>']
+}, ['blocking'])
